@@ -1,8 +1,9 @@
 
-function SignIn() {
+
+function SignIn({hideCreate, setHideCreate}) {
 
 const handleSignIn = () => console.log("Signed in");
-const handleCreate = () => console.log("Created account");
+const handleCreate = () => {hideCreate === true ? setHideCreate(!hideCreate) : console.log("blam")};
 
     return (
 <div className="signInDiv">
